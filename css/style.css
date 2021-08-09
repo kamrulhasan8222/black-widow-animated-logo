@@ -56,10 +56,10 @@ body {
 }
 
 .outer-ring {
-    width: 55rem;
-    height: 55rem;
+    width: 80%;
+    height: 80%;
     background: transparent;
-    border: 4rem solid #A41418;
+    border: 3rem solid #A41418;
     border-radius: 50%;
     position: absolute;
     left: 50%;
@@ -69,11 +69,21 @@ body {
 }
 
 .inner-layer {
-    width: 30rem;
-    height: 30rem;
+    width: 65%;
+    height: 65%;
     background: repeating-conic-gradient(from 315deg, #A41418 0deg 90deg, transparent 90deg 180deg);
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 500px) {
+    .logo {
+        width: 30rem;
+        height: 30rem;
+    }
+    .outer-ring {
+        border: 1rem solid #A41418;
+    }
 }
